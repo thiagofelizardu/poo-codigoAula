@@ -6,6 +6,6 @@ public interface Restaurante {
 
     public List<String> listarMenu();
 
-    public String cozinhar(String item);
+    public Comida cozinhar(String item);
 
 }

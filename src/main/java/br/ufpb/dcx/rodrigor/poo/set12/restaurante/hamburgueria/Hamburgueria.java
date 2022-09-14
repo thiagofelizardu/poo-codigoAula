@@ -1,8 +1,11 @@
 package br.ufpb.dcx.rodrigor.poo.set12.restaurante.hamburgueria;
 
+import br.ufpb.dcx.rodrigor.poo.set12.restaurante.Comida;
+import br.ufpb.dcx.rodrigor.poo.set12.restaurante.Restaurante;
+
 import java.util.*;
 
-public class Hamburgueria {
+public class Hamburgueria implements Restaurante {
 
     private String nome;
 
@@ -27,4 +30,17 @@ public class Hamburgueria {
         return hamburguers.keySet();
     }
 
+    @Override
+    public List<String> listarMenu() {
+        List<String> menu = new LinkedList<>();
+        for(String nome: getMenu()){
+            menu.add(nome);
+        }
+        return menu;
+    }
+
+    @Override
+    public Comida cozinhar(String item) {
+        return prepararHamburger(item);
+    }
 }

@@ -1,9 +1,11 @@
 package br.ufpb.dcx.rodrigor.poo.set12.restaurante.hamburgueria;
 
+import br.ufpb.dcx.rodrigor.poo.set12.restaurante.Comida;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hamburguer {
+public class Hamburguer implements Comida {
 
     private String nome;
     private List<String> ingredientes;
@@ -17,6 +19,7 @@ public class Hamburguer {
         this.ingredientes.add(ingrediente);
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
