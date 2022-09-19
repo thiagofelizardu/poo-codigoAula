@@ -9,13 +9,13 @@ public class SistemaRestaurante {
 
 
     private Restaurante restaurante;
-
+ //readme
     public SistemaRestaurante(Restaurante restaurante){
         this.restaurante = restaurante;
     }
 
     public static void main(String[] args) {
-        SistemaRestaurante sistema = new SistemaRestaurante(new Pizzaria());
+        SistemaRestaurante sistema = new SistemaRestaurante(new Hamburgueria("Lanchonete do Lucas"));
         sistema.printMenu();
     }
 

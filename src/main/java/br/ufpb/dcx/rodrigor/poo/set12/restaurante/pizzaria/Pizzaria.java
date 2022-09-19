@@ -5,7 +5,7 @@ import br.ufpb.dcx.rodrigor.poo.set12.restaurante.Restaurante;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Pizzaria implements Restaurante {
+public class Pizzaria {
 
     private Map<String,Pizza> pizzas;
     private String nome;
