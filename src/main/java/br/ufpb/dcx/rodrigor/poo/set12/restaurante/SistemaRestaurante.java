@@ -15,7 +15,7 @@ public class SistemaRestaurante {
     }
 
     public static void main(String[] args) {
-        SistemaRestaurante sistema = new SistemaRestaurante(new Pizzaria());
+        SistemaRestaurante sistema = new SistemaRestaurante(new Hamburgueria("Thiago"));
         sistema.printMenu();
     }
 
