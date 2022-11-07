@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Pizzaria implements Restaurante {
+public class Pizzaria {
 
     private Map<String,Pizza> pizzas;
     private String nome;
